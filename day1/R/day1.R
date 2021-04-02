@@ -5,11 +5,12 @@ library(ggstream)
 library(colorspace)
 library(lubridate)
 library(ggtext)
+library(altText)
 
-cards <- here("week1", "data", "cards.csv") %>%
+cards <- here("day1", "data", "cards.csv") %>%
   read_csv()
 
-sets <- here("week1", "data", "sets.csv") %>%
+sets <- here("day1", "data", "sets.csv") %>%
   read_csv() %>%
   rename(set_name = name,
          set_id = id,
@@ -44,7 +45,7 @@ labels <- tibble(types = c("Artifact", "Creature", "Instant", "Sorcery", "Enchan
                  y = c(0.95, 0.70, 0.40, 0.27, 0.18, 0.115, 0.05))
 
 
-ggplot(streams, aes(x = idx, y = rolling_n, fill = types, color = types)) +
+plot <- ggplot(streams, aes(x = idx, y = rolling_n, fill = types, color = types)) +
   geom_stream(type = "proportional", show.legend = FALSE) +
   geom_text(data = labels, aes(x = x, y = y, label = spaced_title(types)), color = "white", family = "Oswald", hjust = 0) +
   labs(x = NULL,
@@ -62,3 +63,7 @@ ggplot(streams, aes(x = idx, y = rolling_n, fill = types, color = types)) +
            ticks = TRUE) +
   theme(axis.ticks = element_line(color = "#E5E9F0"),
         axis.text.x = element_markdown(hjust = 0))
+
+ggsave(here("week1", "30dcc_day1_2.png"), plot = plot, device = ragg::agg_png(), width = 24, height = 10)
+
+alt_text <- alt_text(plot)
