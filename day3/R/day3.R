@@ -16,7 +16,7 @@ plot <- ggplot(playfair_revolution, aes(x = year, y = interest)) +
   scale_x_continuous(limits = c(1687, 1786), expand = c(0,0), breaks = playfair_revolution$year) +
   labs(x = "The Bottom Line is in Years, those on the Right hand Millions of Pounds",
        y = NULL,
-       title = glue("Interest of the {highlight_text('NATIONAL DEBT', style = 'b', size = 18)} from the Revolution"),
+       title = glue("Interest of the {highlight_text('NATIONAL DEBT', style = 'b', size = 22)} from the Revolution"),
        caption = "**Original**: William Playfair 1786 | **Reproduction**: @jakekaupp 2021") +
   theme_jk(grid = "Y",
            markdown = TRUE,
@@ -26,13 +26,13 @@ plot <- ggplot(playfair_revolution, aes(x = year, y = interest)) +
            axis_title_family = "Charm",
            axis_title_size = 14,
            caption_size = 12,
-           plot_title_size = 18) %+replace%
+           plot_title_size = 20) %+replace%
   theme(panel.grid.major = element_line(color = "black", size = 0.2)) +
   theme(plot.title = element_markdown(hjust = 0.5),
         axis.text = element_markdown(size = 12),
         plot.caption = element_markdown(hjust = 1),
-        panel.border = element_rect(fill = NA, size = 1))
+        panel.border = element_rect(fill = NA, size = 4))
 
 
-ggsave(here("day3", "30dcc_day3.png"), plot, width = 12, height = 9, device = ragg::agg_png())
+ggsave(here("day3", "30dcc_day3.png"), plot, width = 12, height = 8, device = ragg::agg_png())
 
