@@ -5,6 +5,7 @@ library(janitor)
 library(pBrackets)
 library(glue)
 library(ggtext)
+library(altText)
 
 emissions_data <- here("day5", "data", "annual-co-emissions-by-region.csv") %>%
   read_csv() %>%
@@ -64,7 +65,7 @@ bottom_labels <- plot_data %>%
             color = "grey60")
 
 
-ggplot(plot_data, aes(x = year, y = annual_co2_emissions/1000000000, color = color)) +
+plot <- ggplot(plot_data, aes(x = year, y = annual_co2_emissions/1000000000, color = color)) +
   geom_point() +
   geom_path(aes(group = entity)) +
   geom_text(data = filter(plot_data, year == 1999, color != "grey60"), aes(label = entity, x = 2001), hjust = 0, family = "Bebas Neue", size = 5) +
@@ -94,3 +95,6 @@ ggplot(plot_data, aes(x = year, y = annual_co2_emissions/1000000000, color = col
         panel.grid.major = element_line(color = alpha("#FAFAFF", 0.2), linetype = "dashed"),
         plot.background = element_rect(fill = "#30343F", color = "#30343F"))
 
+ggsave(here('day5', '30dcc_day5.png'), plot, width = 12.5, height = 10, device = ragg::agg_png())
+
+alt_text <- alt_text(plot)
