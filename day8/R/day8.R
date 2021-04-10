@@ -77,9 +77,9 @@ flower_legend <- plot_data %>%
   geom_circle(aes(x0 = 0, y0 = 0, r = 2), inherit.aes = FALSE, size = 0.1, color = "#cccccc") +
   geom_circle(aes(x0 = 0, y0 = 0, r = 1), inherit.aes = FALSE, size = 0.1, color = "#cccccc") +
   geom_ellipse(aes(x0 = x0, y0 = y0, a = percent, b = percent/2, angle = radians, fill = incident_year), alpha = 0.5, size = 0.1) +
-  geom_mark_circle(aes(x = 2*x0, y = 2*y0, label = glue("{month.name[incident_month]}, {incident_year}"), description = "Single colour long petal represents 100% of collison event during this month and year", filter = incident_year == 1991 & incident_month == 3), expand = unit(1, "mm"), label.family = c("Oswald", "Lora"), label.fontsize = 10, label.buffer = unit(5, "mm"), inherit.aes = FALSE) +
-  geom_mark_circle(aes(x = 2*x0, y = 2*y0, label = glue("{month.name[incident_month]}, Multiple years"), description = "Multiple coloured petals represent repeated annual incidents during this month", filter = incident_year == 1999 & incident_month == 8), expand = unit(1, "mm"), label.family = c("Oswald", "Lora"), label.fontsize = 10, label.buffer = unit(5, "mm"), inherit.aes = FALSE) +
-  geom_text(data = filter(axes_labels(2.15), label %notin% c("Mar", "Aug")), aes(x = x, y = y, label = label), inherit.aes = FALSE, family = "Lora") +
+  geom_mark_circle(aes(x = 2*x0, y = 2*y0, label = glue("{month.name[incident_month]}, {incident_year}"), description = "Single colour long petal represents 100% of collison event during this month and year", filter = incident_year == 1991 & incident_month == 3), expand = unit(1, "mm"), label.family = c("Oswald", "Lora"), label.fontsize = 10, label.buffer = unit(2, "mm"), inherit.aes = FALSE) +
+  geom_mark_circle(aes(x = 2*x0, y = 2*y0, label = glue("{month.name[incident_month]}, Multiple years"), description = "Multiple coloured petals represent repeated annual incidents during this month", filter = incident_year == 1999 & incident_month == 8), expand = unit(1, "mm"), label.family = c("Oswald", "Lora"), label.fontsize = 10, label.buffer = unit(2, "mm"), inherit.aes = FALSE) +
+  geom_text(data = filter(axes_labels(2.15), label %notin% c("Mar", "Sep")), aes(x = x, y = y, label = label), inherit.aes = FALSE, family = "Lora") +
   scale_color_viridis_c(option = "plasma", direction = 1) +
   scale_fill_viridis_c(option = "plasma", direction = 1) +
   labs(x = NULL, y = NULL) +
@@ -96,7 +96,8 @@ color_legend <- tibble(year = 1990:2018,
   scale_fill_viridis_c(option = "plasma", direction = 1) +
   scale_x_continuous(breaks = c(1990, 2000, 2010, 2018)) +
   coord_equal() +
-  theme_jk(grid = FALSE) +
+  theme_jk(grid = FALSE,
+           base_family = "Lora") +
   labs(x = NULL, y = NULL) +
   theme(axis.text.y = element_blank())
 
@@ -115,4 +116,6 @@ out <- wrap_plots(finished_legend, bird_flowers, nrow = 1, widths = c(0.85, 1.2)
                     theme(plot.caption = element_markdown()))
 
 
-ggsave(here("day8", "30dcc_day8.png"), out, width = 16, height = 10, type = "cairo")
+ggsave(here("day8", "30dcc_day8.png"), out, width = 16, height = 10, device = ragg::agg_png())
+
+altText::alt_text(out)
