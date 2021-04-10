@@ -47,4 +47,4 @@ plot <- ggplot(data) +
         plot.title = element_markdown(hjust = 0.5, family = "Alata"))
 
 
-ggsave(here("day9", "30dcc_day9.png"), plot, height = 8, width = 14, units = 'in', device = ragg::agg_png())
+ggsave(here("day9", "30dcc_day9.png"), plot, height = 9, width = 14, units = 'in', device = ragg::agg_png())
