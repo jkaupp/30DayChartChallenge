@@ -49,3 +49,5 @@ plot <- ggplot(plot_data, aes(x = year, y = state, fill = rate)) +
   coord_polar()
 
 ggsave(here("day11", "30dcc_day11.png"), plot, width = 8, height = 8)
+
+altText::alt_text(plot)
