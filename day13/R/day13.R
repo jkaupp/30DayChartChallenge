@@ -71,8 +71,8 @@ plot <- ggplot(tt_2019, aes(x = lines, y = favorite_count)) +
   geom_mark_circle(data = annotations, aes(label = glue("Week {week}: {dataset_name}"), description = glue("{lines} lines of code, {favorite_count} likes"), group = dataset_id), label.family = c('Oswald Bold', "Oswald Light")) +
   labs(x = NULL,
        y = NULL,
-       title = "The Relationship Beteen Code and Popularity #TidyTuesday Submisssions",
-       subtitle = "Shown below is a scatterplot of Twitter likes against lines of code illustrating the relationship between the lines of code written for my<br>52 #TidyTuesday submissions in 2019.",
+       title = "The Relationship Beteen Code and Popularity in #TidyTuesday Submisssions",
+       subtitle = "Shown below is a scatterplot of Twitter likes against lines of code illustrating the relationship between the lines of code<br>written for my 52 #TidyTuesday submissions in 2019.",
        caption = "**Data**: github.com/jkaupp | **Graphic**: @jakekaupp") +
   scale_x_continuous(limits = c(0, 250)) +
   annotate("text", x = 30, y = 30, label = glue("r = {round(r, 3)}"), color = "firebrick", family = "Oswald Bold", size = 4, hjust = 1) +
@@ -80,5 +80,6 @@ plot <- ggplot(tt_2019, aes(x = lines, y = favorite_count)) +
            markdown = TRUE) +
   theme(plot.title.position = "plot")
 
-ggsave(here("day13", "30dcc_week13.png"), plot, device = ragg::agg_png(), width = 10, height = 10)
+ggsave(here("day13", "30dcc_day13.png"), plot, device = ragg::agg_png(), width = 9, height = 9)
 
+altText::alt_text(plot)
