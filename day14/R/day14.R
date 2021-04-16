@@ -7,6 +7,7 @@ library(colorspace)
 library(ggforce)
 library(here)
 library(glue)
+library(magick)
 
 # The majority of the code for this is from the amazing post https://kimnewzealand.github.io/2019/02/21/celestial-maps/
 
@@ -93,5 +94,11 @@ plot <- ggplot(stars_sf) +
            subtitle_family = "Oxygen")
 
 ggsave(here("day14", "30dcc_day14.png"), plot, width = 13.5, height = 8.4375)
+
+image_read(here("day14", "30dcc_day14.png")) %>%
+  image_trim() %>%
+  image_write(here("day14", "30dcc_day14.png"))
+
+altText::alt_text(plot)
 
 
