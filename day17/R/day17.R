@@ -6,6 +6,7 @@ library(colorspace)
 library(rvest)
 library(janitor)
 library(patchwork)
+library(ggtext)
 
 
 pokemon <- read_csv(here("day17", "data", "pokemon.csv"))
@@ -61,6 +62,9 @@ types <- ggplot(plot_data, aes(x = defense, y = attack)) +
 final <- all_pokemon + types + plot_annotation(title = "Are Pokemon All Balanced Between Attack and Defense Or Are There Type-Specific Differences?",
                                                subtitle = "Illustrated below are scatterplots of attack stats versus defense stats for all pokemon generations 1-7. The first larger plot show every pokemon, with each pokemon type broken out into small multiples.  Clearly, some pokemon types are more geared for attacking or defense moreso than others.",
                                                caption = "**Data**: @edubaschool c/o data.world | **Graphic**: @jakekaupp",
-                                               theme = theme_jk(plot_title_size = 30))
+                                               theme = theme_jk(plot_title_size = 30) +
+                                                 theme(plot.caption = element_markdown()))
 
-ggsave(here('day17', "tdcc_day17.png"), final, width = 26, height = 10)
+ggsave(here('day17', "tdcc_day17.png"), final, width = 24, height = 10)
+
+altText::alt_text(final)

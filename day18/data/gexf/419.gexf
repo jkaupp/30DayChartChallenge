@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2012-08-25">
+    <creator>Gephi 0.8</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" timeformat="double" mode="dynamic">
+    <attributes class="node" mode="static">
+      <attribute id="movie_id" title="movie_id" type="integer"></attribute>
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="degree" title="Degree" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="componentnumber" title="Component ID" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="movie_id" title="movie_id" type="integer"></attribute>
+    </attributes>
+    <nodes>
+      <node id="2572699" label="BEN">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8823529411764706"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="5.0"></viz:size>
+        <viz:position x="57.36122" y="85.054"></viz:position>
+        <viz:color r="255" g="170" b="51"></viz:color>
+      </node>
+      <node id="2569638" label="BROOKS">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8235294117647058"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="degree" value="5"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="5.0"></viz:size>
+        <viz:position x="-45.467304" y="-16.20282"></viz:position>
+        <viz:color r="255" g="102" b="0"></viz:color>
+      </node>
+      <node id="2568814" label="DAVE">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8823529411764706"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="5.0"></viz:size>
+        <viz:position x="118.98345" y="67.18988"></viz:position>
+        <viz:color r="255" g="170" b="51"></viz:color>
+      </node>
+      <node id="2569433" label="DERRICK">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.235294117647059"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.25"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="5.0771604"></viz:size>
+        <viz:position x="88.00927" y="-149.27792"></viz:position>
+        <viz:color r="255" g="102" b="0"></viz:color>
+      </node>
+      <node id="2569792" label="ESTES">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8235294117647058"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="degree" value="5"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="5.0"></viz:size>
+        <viz:position x="-6.3023705" y="22.330908"></viz:position>
+        <viz:color r="255" g="102" b="0"></viz:color>
+      </node>
+      <node id="2567882" label="JULIE">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.2352941176470589"></attvalue>
+          <attvalue for="betweenesscentrality" value="48.599999999999994"></attvalue>
+          <attvalue for="degree" value="13"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="20.0"></viz:size>
+        <viz:position x="41.90589" y="8.8497505"></viz:position>
+        <viz:color r="255" g="170" b="51"></viz:color>
+      </node>
+      <node id="2568337" label="KARLA">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.3529411764705883"></attvalue>
+          <attvalue for="betweenesscentrality" value="19.216666666666665"></attvalue>
+          <attvalue for="degree" value="11"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.93107"></viz:size>
+        <viz:position x="57.97801" y="-30.224031"></viz:position>
+        <viz:color r="255" g="102" b="0"></viz:color>
+      </node>
+      <node id="2571029" label="MAC">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.4705882352941178"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="5.0"></viz:size>
+        <viz:position x="202.86194" y="48.681118"></viz:position>
+        <viz:color r="255" g="170" b="51"></viz:color>
+      </node>
+      <node id="2568678" label="MARK">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0588235294117645"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="5.0"></viz:size>
+        <viz:position x="-36.563835" y="-68.52487"></viz:position>
+        <viz:color r="255" g="170" b="51"></viz:color>
+      </node>
+      <node id="2569979" label="NANCY">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7647058823529411"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.2"></attvalue>
+          <attvalue for="degree" value="6"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="5.0617285"></viz:size>
+        <viz:position x="79.61155" y="0.6543303"></viz:position>
+        <viz:color r="255" g="102" b="0"></viz:color>
+      </node>
+      <node id="2571831" label="OLD LADY">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.4705882352941178"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="5.0"></viz:size>
+        <viz:position x="185.61136" y="-37.677074"></viz:position>
+        <viz:color r="255" g="170" b="51"></viz:color>
+      </node>
+      <node id="2569387" label="PAULSEN">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6470588235294117"></attvalue>
+          <attvalue for="betweenesscentrality" value="7.316666666666667"></attvalue>
+          <attvalue for="degree" value="6"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="7.25823"></viz:size>
+        <viz:position x="46.46064" y="-108.55025"></viz:position>
+        <viz:color r="255" g="102" b="0"></viz:color>
+      </node>
+      <node id="2567897" label="PRIEST">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.176470588235294"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="5.0"></viz:size>
+        <viz:position x="-19.139805" y="-107.76995"></viz:position>
+        <viz:color r="255" g="170" b="51"></viz:color>
+      </node>
+      <node id="2567972" label="PROFESSOR">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.176470588235294"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="5.0"></viz:size>
+        <viz:position x="1.7211516" y="111.54936"></viz:position>
+        <viz:color r="255" g="170" b="51"></viz:color>
+      </node>
+      <node id="2568109" label="RAY">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5294117647058822"></attvalue>
+          <attvalue for="betweenesscentrality" value="33.166666666666664"></attvalue>
+          <attvalue for="degree" value="8"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="15.236627"></viz:size>
+        <viz:position x="120.993095" y="23.62869"></viz:position>
+        <viz:color r="255" g="170" b="51"></viz:color>
+      </node>
+      <node id="2569519" label="TITUS">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.2"></attvalue>
+          <attvalue for="degree" value="4"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="5.3703704"></viz:size>
+        <viz:position x="85.383545" y="-82.721085"></viz:position>
+        <viz:color r="255" g="102" b="0"></viz:color>
+      </node>
+      <node id="2568436" label="TYRELL">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.588235294117647"></attvalue>
+          <attvalue for="betweenesscentrality" value="9.433333333333334"></attvalue>
+          <attvalue for="degree" value="9"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="7.911523"></viz:size>
+        <viz:position x="28.259651" y="-53.119804"></viz:position>
+        <viz:color r="255" g="102" b="0"></viz:color>
+      </node>
+      <node id="2567990" label="WILL">
+        <attvalues>
+          <attvalue for="movie_id" value="419"></attvalue>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.411764705882353"></attvalue>
+          <attvalue for="betweenesscentrality" value="12.616666666666665"></attvalue>
+          <attvalue for="degree" value="10"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="8.894033"></viz:size>
+        <viz:position x="16.718761" y="-19.488884"></viz:position>
+        <viz:color r="255" g="102" b="0"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="2572699" target="2568109" label="89964">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569638" target="2567882" label="89854">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569638" target="2568337" label="89858">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569638" target="2569979" label="89856">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569638" target="2568436" label="89857">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569638" target="2567990" label="89855">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568814" target="2567882" label="89775">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568814" target="2568337" label="89777">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568814" target="2568109" label="89776" weight="3.0">
+        <attvalues>
+          <attvalue for="weight" value="3.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569433" target="2569387" label="89807">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569433" target="2569519" label="89846">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569792" target="2567882" label="89911" weight="2.0">
+        <attvalues>
+          <attvalue for="weight" value="2.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569792" target="2568337" label="89912" weight="2.0">
+        <attvalues>
+          <attvalue for="weight" value="2.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569792" target="2569979" label="89955">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569792" target="2568436" label="89914" weight="2.0">
+        <attvalues>
+          <attvalue for="weight" value="2.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569792" target="2567990" label="89913" weight="3.0">
+        <attvalues>
+          <attvalue for="weight" value="3.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567882" target="2572699" label="89960">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567882" target="2568337" label="89766" weight="16.0">
+        <attvalues>
+          <attvalue for="weight" value="16.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567882" target="2568678" label="89773">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567882" target="2569979" label="89860" weight="6.0">
+        <attvalues>
+          <attvalue for="weight" value="6.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567882" target="2569387" label="89798">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567882" target="2567897" label="89757">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567882" target="2568436" label="89768" weight="10.0">
+        <attvalues>
+          <attvalue for="weight" value="10.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567882" target="2567990" label="89767" weight="13.0">
+        <attvalues>
+          <attvalue for="weight" value="13.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568337" target="2568678" label="89774">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568337" target="2569979" label="89933" weight="5.0">
+        <attvalues>
+          <attvalue for="weight" value="5.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568337" target="2569387" label="89801">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568337" target="2569519" label="89809" weight="2.0">
+        <attvalues>
+          <attvalue for="weight" value="2.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568337" target="2568436" label="89770" weight="10.0">
+        <attvalues>
+          <attvalue for="weight" value="10.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2571029" target="2568109" label="89869">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569979" target="2568436" label="89834" weight="3.0">
+        <attvalues>
+          <attvalue for="weight" value="3.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2571831" target="2568109" label="89895">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569387" target="2568109" label="89910">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567972" target="2567882" label="89758">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568109" target="2567882" label="89967" weight="4.0">
+        <attvalues>
+          <attvalue for="weight" value="4.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568109" target="2568337" label="89780">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2569519" target="2567990" label="89813" weight="2.0">
+        <attvalues>
+          <attvalue for="weight" value="2.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568436" target="2569433" label="89805">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568436" target="2569387" label="89804" weight="2.0">
+        <attvalues>
+          <attvalue for="weight" value="2.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568436" target="2569519" label="89811" weight="2.0">
+        <attvalues>
+          <attvalue for="weight" value="2.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2568436" target="2567990" label="89788" weight="15.0">
+        <attvalues>
+          <attvalue for="weight" value="15.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567990" target="2572699" label="89962">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567990" target="2568337" label="89793" weight="11.0">
+        <attvalues>
+          <attvalue for="weight" value="11.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567990" target="2569979" label="89863" weight="3.0">
+        <attvalues>
+          <attvalue for="weight" value="3.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567990" target="2569387" label="89803">
+        <attvalues>
+          <attvalue for="weight" value="1.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="2567990" target="2568109" label="89760" weight="2.0">
+        <attvalues>
+          <attvalue for="weight" value="2.0"></attvalue>
+          <attvalue for="movie_id" value="419"></attvalue>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
