@@ -6,6 +6,7 @@ library(ggraph)
 library(graphlayouts)
 library(colorspace)
 library(ggtext)
+library(magick)
 
 meta_data <- read_tsv(here('day18', 'data', 'network_metadata.tab'))
 
@@ -63,3 +64,11 @@ plot <- ggraph(network, 'focus', focus = node_is_center()) +
 
 
 ggsave(here("day18", "tdcc_day18.png"), plot, width = 18, height = 18, device = ragg::agg_png())
+
+
+here("day18", "tdcc_day18.png") %>%
+  image_read() %>%
+  image_trim() %>%
+  image_write(here("day18", "tdcc_day18.png"))
+
+altText::alt_text(plot)
