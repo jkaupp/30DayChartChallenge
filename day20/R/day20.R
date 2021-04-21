@@ -10,7 +10,7 @@ library(ggtext)
 
 gme <- tq_get("GME",
               from = '2020-12-01',
-              to = "2021-04-01",
+              to = "2021-02-24",
               get = "stock.prices")
 
 labels <- tibble(date = c("2020-12-08",
@@ -57,7 +57,7 @@ plot <- ggplot(gme, aes(x = date, y = adjusted)) +
   annotate(GeomTextBox, x = as_date("2020-12-02"), y = 380, label = "The wild ride of Hedge Funds, r/WallStreetBets and RobinHood shown as an annotated timeline of the early rise and fall of the stock price of GameStop (GME)", size = 8, family = "Alegreya Sans Regular", hjust = 0, vjust = 1, fill = NA, box.size = 0, width = unit(9.5, "inch")) +
   scale_y_continuous(limits = c(0, 450), expand = c(0,0), breaks = seq(0, 400, 100), labels = c("", "100", "200", "300", "$400/share")) +
   scale_x_date(date_breaks = "months",
-               date_labels = "%Y",
+               date_labels = "%F",
                expand = c(0,0)) +
   labs(x = NULL,
        y = NULL,
@@ -66,5 +66,5 @@ plot <- ggplot(gme, aes(x = date, y = adjusted)) +
            base_family = "Anton",
            markdown = TRUE)
 
-ggsave(here("day20", "tdcc_day20.png"), plot, device = ragg::agg_png(), width = 24, height = 12)
+ggsave(here("day20", "tdcc_day20.png"), plot, device = ragg::agg_png(), width = 20, height = 10)
 
