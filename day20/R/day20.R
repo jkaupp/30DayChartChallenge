@@ -61,11 +61,10 @@ plot <- ggplot(gme, aes(x = date, y = adjusted)) +
                expand = c(0,0)) +
   labs(x = NULL,
        y = NULL,
-       caption = "**Data**: Yahoo Finance | **Graphic**: @jakekaupp") +
+       caption = "**Data**: Yahoo Finance | **Graphic**: @jakekaupp | **Headlines**: Reuters & ABC News") +
   theme_jk(caption_family = "Alegreya Sans Light",
            base_family = "Anton",
            markdown = TRUE)
-
 
 ggsave(here("day20", "tdcc_day20.png"), plot, device = ragg::agg_png(), width = 24, height = 12)
 
