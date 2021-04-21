@@ -62,7 +62,7 @@ plot <- ggplot(gme, aes(x = date, y = adjusted)) +
   labs(x = NULL,
        y = NULL,
        caption = "**Data**: Yahoo Finance | **Graphic**: @jakekaupp | **Headlines**: Reuters & ABC News") +
-  theme_jk(caption_family = "Alegreya Sans Light",
+  theme_jk(caption_family = "Alegreya Sans",
            base_family = "Anton",
            markdown = TRUE)
 
