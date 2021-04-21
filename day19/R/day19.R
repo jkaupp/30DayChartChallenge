@@ -72,4 +72,4 @@ plot <- top / facets + plot_layout(height = c(0.15, 0.85)) + plot_annotation(the
 
 ggsave(here('day19', 'tdcc_day19.png'), plot, width = 16, height = 12, device = ragg::agg_png(), dpi = 300)
 
-
+altText::alt_text(plot)
