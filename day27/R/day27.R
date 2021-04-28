@@ -64,3 +64,5 @@ plot <- ggplot(plot_data) +
   theme(plot.background = element_rect(fill = "#EDF2F4", color = NA))
 
 ggsave(here('day27', "tdcc_day27.png"), plot, width = 16, height = 8, device = ragg::agg_png())
+
+altText::alt_text(plot)
