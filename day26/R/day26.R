@@ -19,7 +19,7 @@ plot <- ggplot() +
        caption = "Data: DiscoStu | Graphic: @jakekaupp") +
   scale_x_continuous(limits = c(0, 12), expand = c(0,0.01), breaks = c(1.5, 4.5, 7.5, 10.5), labels = c(73:76)) +
   scale_y_continuous(limits = c(-10.5, 0), expand = c(0,0)) +
-  theme_jk(base_size = 20,
+  theme_jk(base_size = 40,
            plot_title_size = 80,
            markdown = TRUE) +
   theme(axis.text.y = element_blank(),
